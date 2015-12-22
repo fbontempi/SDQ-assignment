@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include "results_and_quiz.h"
+#include "admin.h"
 using namespace std;
 
 class Login
@@ -8,24 +9,26 @@ public:
 
     void SendUsername()
     {
-        char Username[9];
-
+        //char Username[9];
+        string Username;
+        string d = "admin";
+        string g = "student";
         while(1)
         {
 
             cout << "Login as Student or Admin?\n" << endl;
             cin >> Username;
 
-            if (Username == 'admin')
+            if (Username == d)
             {
-                Admin a;
-                a.Admin_Function;
+                admin a;
+                a.admin_fun();
             }
 
-            else if (Username == 'student')
+            else if (Username == g)
             {
                 Student s;
-                s.doquiz;
+                s.doquiz();
             }
 
             else
@@ -42,12 +45,12 @@ public:
 
 };
 
-int main()
+/*int main()
 {
     Login l;
 
     l.SendUsername();
 
     return 0;
-}
+}*/
 

@@ -51,28 +51,25 @@ public:
 																																													                            std::cout<<"correct\n";
 																																																                            j = 3;
 																																																			                        }
-																																																						                    if(answer != 'c')
-																																																								                        {
-																																																											                        attemps++;
-																																																														                        std::cout<<"wrong "<<attemps<<"\n";
-																																																																	                    }
-																																																																			                    }
-																																																																					                    else
-																																																																							                    {
-																																																																									                        std::cout << "incorrect value\n";
-																																																																												                }
-																																																																														            }
-																																																																															            }
-
-																																																																																            std::cout<<attemps<<"  attemps\n";
-																																																																																	            //return;
-
-																																																																																		        }
+                                                                                                                                                                                            if(answer != 'c')
+                                                                                                                                                                                        {
+                                                                                                                                                                                            attemps++;
+                                                                                                                                                                                            std::cout<<"wrong "<<attemps<<"\n";
+                                                                                                                                                                                        }
+                                                                                                                                                                                    }
+                                                                else
+                                                                {
+                                                                    std::cout << "incorrect value\n";
+                                                                }
+                                                                }
+                                                                std::cout<<attemps<<"  attemps\n";
+                                                                //return;
+                                                                }
 																																																																																			};
-																																																																																			int main()
-																																																																																			{
-																																																																																			    quiz q;
-																																																																																			        q.takequiz();
-																																																																																				    return 0;
-																																																																																				    }
+                                                        /*int main()
+                                                        {
+                                                            quiz q;
+                                                            q.takequiz();
+                                                            return 0;
+                                                        }*/
 
